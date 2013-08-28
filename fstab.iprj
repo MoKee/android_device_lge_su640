@@ -1,7 +1,17 @@
-/dev/block/mmcblk0p27       /system         ext4    ro,barrier=1,data=ordered wait
-/dev/block/mmcblk0p28       /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered wait
-/dev/block/mmcblk0p30       /data           ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc wait
-/dev/block/mmcblk0p12       /persist        ext4    nosuid,nodev,barrier=1,data=ordered,nodelalloc wait
-/dev/block/mmcblk0p31       /mpt            ext4    nosuid,nodev,barrier=1,data=ordered wait
-/dev/block/mmcblk0p22       /tombstones     ext4    nosuid,nodev,barrier=1,data=ordered wait
-/dev/block/mmcblk0p1        /firmware       vfat    ro,shortname=lower,umask=0003 wait
+# Android fstab file.
+#<src>			<mnt_point>	<type>	<mnt_flags>													<fs_mgr_flags>
+# load these in early-init instead
+
+/dev/block/mmcblk0p8	    /boot		    emmc	defaults											defaults
+/dev/block/mmcblk0p13	    /recovery		    emmc	defaults											defaults
+/dev/block/mmcblk0p27       /system	    	    ext4	ro,barrier=1,data=ordered								wait
+/dev/block/mmcblk0p28       /cache	    	    ext4	noatime,nosuid,nodev,barrier=1,data=ordered						wait
+/dev/block/mmcblk0p30       /data	    	    ext4	noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc						wait
+/dev/block/mmcblk0p12       /persist	    	    ext4	nosuid,nodev,barrier=1,data=ordered,nodelalloc wait
+/dev/block/mmcblk0p31       /mpt	    	    ext4	nosuid,nodev,barrier=1,data=ordered						wait
+/dev/block/mmcblk0p22       /tombstones	    	    ext4	nosuid,nodev,barrier=1,data=ordered						wait
+/dev/block/mmcblk0p1        /firmware  	    	    vfat	ro,shortname=lower,umask=0003						wait
+
+
+# sdcard
+/devices/platform/msm_sdcc.3/mmc_host /storage/sdcard vfat   defaults                                                        voldmanaged=sdcard:auto
