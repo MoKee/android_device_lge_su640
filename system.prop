@@ -7,3 +7,4 @@ ro.telephony.default_network=9
 telephony.lteOnGsmDevice=1
 ro.telephony.ril.v3=qcomuiccstack
 ro.product.camera=lgp930
+gsm.version.baseband=APQ8060/MDM9200
