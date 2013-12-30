@@ -4,10 +4,6 @@
    "target_path": "device/lge/iprj-common"
  },
  {
-   "repository": "android_vendor_lge_iprj-common",
-   "target_path": "vendor/lge/iprj-common"
- },
- {
    "repository": "android_kernel_lge_iproj",
    "target_path": "kernel/lge/iproj"
  }
