@@ -7,7 +7,7 @@ TARGET_BOOTLOADER_BOARD_NAME := su640
 TARGET_OTA_ASSERT_DEVICE := su640
 
 # Try to build the kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_su640_defconfig
+TARGET_KERNEL_CONFIG := mokee_su640_defconfig
 # Keep this as a fallback
 TARGET_PREBUILT_KERNEL := device/lge/su640/kernel
 
